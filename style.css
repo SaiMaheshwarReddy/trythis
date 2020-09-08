@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tiles {
+  width: 25%;
+  height: 50vh;
+  background: rgb(241, 135, 135);
+  position: relative;
+}
+
+.tiles-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg {
+  font-size: 4rem;
+  padding: 10px;
+}
+
+.svg-p {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+.hover-paragraph {
+  top: 0;
+  height: 50vh;
+  position: absolute;
+  background: rgb(177, 53, 53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.paragraph {
+  width: 100%;
+  text-align: center;
+}
+
+.tiles:hover .hover-paragraph {
+  opacity: 1;
+}
